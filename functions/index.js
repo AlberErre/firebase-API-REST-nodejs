@@ -8,8 +8,8 @@ appREST.get('/all', (req, res) => {
 	res.send("Hey there! testing this stuff over here :)");
 });
 
-appREST.get('/id', (req, res) => {
-	res.send("This id");
+appREST.get('/id/:id', (req, res) => {
+	res.send(`This id: ${req.params.id}`);
 });
 
 
