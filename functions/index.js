@@ -5,7 +5,7 @@ const appREST = express();
 
 
 appREST.get('/all', (req, res) => {
-	res.send("Hey there! testing this stuff over here :)");
+	res.send(200, {msg: "Hey there! testing this stuff over here :)"});
 });
 
 appREST.get('/id/:id', (req, res) => {
