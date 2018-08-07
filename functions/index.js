@@ -9,7 +9,7 @@ appREST.get('/all', (req, res) => {
 });
 
 appREST.get('/id/:id', (req, res) => {
-	res.send(`This id: ${req.params.id}`);
+	res.status(200).send(`This id: ${req.params.id}`);
 });
 
 
